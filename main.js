@@ -7,7 +7,7 @@ let all_subjects = undefined;
 async function getSubjects(){
     if (all_subjects) return all_subjects;
 
-    let response = await fetch("subjects.json");
+    let response = await fetch("./subjects.json");
     let subjects_list = await response.json();
     all_subjects = {}
     for (const s of subjects_list) {
