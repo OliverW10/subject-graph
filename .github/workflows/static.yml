@@ -34,16 +34,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20"
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
       - name: Install dependencies
         run: npm ci
       - name: Build with parcel
-        run: npx build index.html
+        run: npx parcel build index.html
       - name: Copy other thing
         run: cp subjects.json dist/
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          path: 'dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
