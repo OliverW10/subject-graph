@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "(parcel build ./index.html) && (copy subjects.json dist) && (parcel ./index.html)"
+  },
   "dependencies": {
     "graphology": "^0.25.4",
     "graphology-layout": "^0.6.1",
