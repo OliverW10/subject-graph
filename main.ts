@@ -44,9 +44,9 @@ async function getSubjects() : Promise<{ [id: number] : SubjectInfoFilled }> {
     // Get prereq depth for each subject
     let depths: { [ id: number]: number } = {};
     for (const s of Object.values(subjectsDtos)) {
-        depths[s.number] = getDepth(s, subjectsDtos, depths);
+        getDepth(s, subjectsDtos, depths);
     }
-    
+
     subjectsCache = {};
     for (const dto of Object.values(subjectsDtos)) {
         const filled: SubjectInfoFilled = {
@@ -68,8 +68,14 @@ function getDepth(subject, all_subjects_dict, depths){
     if (depths[subject.number] != undefined) {
         return depths[subject.number];
     }
+    // hack to prevent getting stuck on cycles
+    depths[subject.number] = 0;
 
-    return Math.max(...[subject.prereqs.map(id => getDepth(all_subjects_dict[id], all_subjects_dict, depths))]) + 1;
+    const result = Math.max(...[subject.prereqs.map(id => {
+        return all_subjects_dict[id] ? getDepth(all_subjects_dict[id], all_subjects_dict, depths) : 0
+    })]) + 1;
+    depths[subject.number] = result;
+    return result;
 }
 
 
