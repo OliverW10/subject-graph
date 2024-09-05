@@ -9,53 +9,23 @@ async function getSubjects(){
 
     let response = await fetch("./subjects.json");
     let subjects_list = await response.json();
-    all_subjects = {}
+    all_subjects = new Map();
     for (const s of subjects_list) {
-        all_subjects[s.number] = s;
-        s["postreqs"] = []
+        all_subjects.set(s.number, s);
+        s.postreqs = []
     }
-    for (const [num, s] of Object.entries(all_subjects)) {
+    for (const s of all_subjects.values()) {
         for (const prereq of s.prereqs) {
-            if (all_subjects.hasOwnProperty(prereq)) {
-                const other = all_subjects[prereq];
-                if (!other["postreqs"]) {
-                }
+            if (all_subjects.has(prereq)) {
+                const other = all_subjects.get(prereq);
                 other.postreqs.push(s.number)
             } else {
-                console.log(`${s.number} has a preq for a subject we dont have ${prereq}`);
+                //console.log(`${s.number} has a preq for a subject we dont have ${prereq}`);
             }
         }
     }
 
     return all_subjects;
-}
-
-function getRelativesOf(targetId){
-    var related = [subjects[targetId]];
-    var seen = new Set();
-    seen.add(targetId.toString())
-
-    const addPostReqs = (s) => {
-        for(var postReqId of s.postreqs){
-            if(!seen.has(postReqId)){
-                const postReq = subjects[postReqId];
-                seen.add(postReqId);
-                related.push(postReq);
-                addPostReqs(postReq);
-            }
-        }
-    };
-    addPostReqs(subjects[target]);
-}
-
-function getAllPrereqs(subject, all_subjects_dict){
-    var prereqs = [];
-    for(var prereqId of subject.prereqs){
-        var prereq = all_subjects_dict[prereqId];
-        prereqs.push(prereq);
-        prereqs.push(...getAllPrereqs(prereq, all_subjects_dict));
-    }
-    return prereqs;
 }
 
 (async () => {
@@ -64,7 +34,7 @@ function getAllPrereqs(subject, all_subjects_dict){
 
     var to_graph = [];
     for (var subjId of subjects_in_comp_sci) {
-        to_graph.push(subjects[subjId]);
+        to_graph.push(subjects.get(subjId));
         // this will result in a bunch of duplicates but whatever
         // to_graph.push(...getAllPrereqs(subjects[subjId], subjects));
     }
@@ -72,11 +42,7 @@ function getAllPrereqs(subject, all_subjects_dict){
     const graph = new Graph();
 
     for (const subject of to_graph) {
-        try{
-            graph.addNode(subject.number, { label: subject.name, defaultLabelSize: 8, x: 0, y: 0, size: 5 + subject.postreqs.length * 0.2, color: "blue" });
-        } catch {
-            // idk how to remove duplicates in js
-        }
+        graph.addNode(subject.number, { label: subject.name, defaultLabelSize: 8, x: 0, y: 0, size: 5 + subject.postreqs.length * 0.2, color: "blue" });
     }
 
     for (const subject of to_graph) {
@@ -90,8 +56,8 @@ function getAllPrereqs(subject, all_subjects_dict){
     }
 
     circular.assign(graph);
-      const settings = forceAtlas2.inferSettings(graph);
-      forceAtlas2.assign(graph, { settings, iterations: 1000 });
+    const settings = forceAtlas2.inferSettings(graph);
+    forceAtlas2.assign(graph, { settings, iterations: 1000 });
     
     const graphRenderer = new Sigma(graph, document.getElementById("container"), { labelSize: 12 });
 })();
