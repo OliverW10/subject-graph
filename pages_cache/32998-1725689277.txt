@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- Generic Metadata -->
+<meta name="description" content="The UTS: Handbook is the authoritative source of information on approved courses and subjects offered at University of Technology Sydney." />
+<meta name="author" content="University of Technology Sydney" />
+
+<!-- No cache Metadata -->
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+
+<!-- Dublin Core Metadata -->
+<meta name="DC.Creator" content="University of Technology Sydney" />
+<meta name="DC.Title" content="University of Technology Sydney" />
+<meta name="DC.Description" content="The UTS: Handbook is the authoritative source of information on approved courses and subjects offered at University of Technology Sydney." />
+<meta name="DC.Publisher" content="University of Technology Sydney" />
+<meta name="DC.Date.Created" content="2009-10-30" />
+<meta name="DC.Date.Modified" content="2019-09-26" />
+<meta name="DC.Identifier" content="https://www.uts.edu.au/" />
+<meta name="DC.Language" content="English" />
+<meta name="DC.Rights" content="Copyright, University of Technology, Sydney. Refer to the UTSWeb Copyright Statement (https://www.uts.edu.au/copyright.html)." />
+
+<link rel="shortcut icon" href="https://www.handbook.uts.edu.au/images/favicon.ico" type="image/x-icon" />
+
+    <title>UTS:&nbsp;32998 .NET Application Development - Information Technology,&nbsp;UTS Handbook </title>
+    
+
+    <link rel="stylesheet" type="text/css" href="https://www.handbook.uts.edu.au/css/generic/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.handbook.uts.edu.au/css/generic/site-template.css" />
+
+    <!--[if lt IE 7]>   <link rel="stylesheet" type="text/css" href="https://www.handbook.uts.edu.au/css/generic/ie6.css" /><![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="https://www.handbook.uts.edu.au/css/override.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.handbook.uts.edu.au/css/bootstrap.css" />
+    
+    <link rel="stylesheet" type="text/css" media="print" href="https://www.handbook.uts.edu.au/css/generic/print.css" />
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script>
+   <!-- <script src="https://www.handbook.uts.edu.au/js/jquery-1.11.3.min.js" type="text/javascript"></script> -->
+<!---    <script src="http://datasearch2.uts.edu.au/common-assets/js/tabber.js" type="text/javascript"></script> --->
+    <script src="https://www.handbook.uts.edu.au/js/bootstrap.js" type="text/javascript"></script>
+
+    <!-- Display the current tab even when JS is disabled -->
+    
+
+    <script type="text/javascript">var current_content = 0;</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PPCSCCF');</script>
+<!-- End Google Tag Manager -->
+
+    
+    
+
+<!---    <script src="https://web.uts.edu.au/js/generic/utils.js" type="text/javascript"></script> --->
+
+    
+</head>
+
+<body id="it">
+
+    <!-- Skip Links -->
+    <div id="skip-links"><a href="#start-content"> <img src="https://web.uts.edu.au/images/css/skip.jpg" alt="Skip to content" width="0" height="0" /> </a> <a href="#navigation"> <img src="https://web.uts.edu.au/images/css/skip.jpg" alt="Skip to navigation" width="0" height="0" /> </a> <a href="https://www.uts.edu.au/accessibility.html"> <img src="https://web.uts.edu.au/images/css/skip.jpg" alt="Accessibility statement" width="0" height="0" /> </a>
+<p class="hidden">Using a modern browser that supports web standards ensures that the site's full visual experience is available.  Consider upgrading your browser if you are using an older technology.</p>
+</div>
+
+    <!-- Global Utility Bar (Banner) -->
+    <div id="global-utility-bar">
+        <!-- UTS Logo -->
+<div id="uts-logo">
+<a href="https://www.uts.edu.au"><img src="https://www.handbook.uts.edu.au/images/uts-logo-black.svg" width="70px" height="30px" alt="University of Technology Sydney homepage"/></a>
+</div>
+
+<!-- Main Title -->
+<div class="hidden-title">
+<p>University of Technology Sydney</p>
+</div>
+
+<!-- Search Form -->
+<div id="global-utility-bar-search">
+<form method="get" action="https://cfsites1.uts.edu.au/publications/search.cfm">
+   <div>
+      SEARCH
+      &nbsp; <input type="radio" name="scope" value="site" checked="checked" id="search-this-site" /> <label for="search-this-site">this site</label>
+      &nbsp; <input type="radio" name="scope" value="uts" id="search-all-UTS" /> <label for="search-all-UTS">UTS</label> &nbsp;
+      <label for="input-text"></label><input type="text" name="q" size="14" maxlength="100" id="input-text" />
+      <input type="submit" name="btnG" value="Go" />
+   </div>
+</form>
+</div>
+    </div>
+
+    <!--Tab Navigation -->
+    <div id="header-wrapper">
+        
+        <div id="header">
+            <a href="https://www.handbook.uts.edu.au/" class="banner-title">Handbook 2025</a>
+<a href="https://www.handbook.uts.edu.au/" class="semester-title"></a>
+<a href="https://www.handbook.uts.edu.au/it/" class="coursearea">Information Technology</a>
+        </div>
+    </div>
+
+    <div id="full-container"> <!-- Full container, includes footer -->
+        <div id="main-container"> <!-- Main Container, does not include footer -->
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper"> <!-- important for IE6 -->
+                <div id="sidebar">
+                    <!-- Use one or the other not both -->
+                    
+                    <div id="level3-nav">
+<div class="level3-nav-heading">
+<a href="https://www.handbook.uts.edu.au/index.html">UTS Handbook</a>
+</div>
+<ul class="section-list">
+<li class="SectionNavLevel2"><a href="https://www.handbook.uts.edu.au/how_to_use.html">How to use this handbook</a></li>
+<li class="SectionNavLevel2"><a href="https://www.handbook.uts.edu.au/general/index.html">General information</a></li>
+<li class="SectionNavLevel2"><a href="https://www.handbook.uts.edu.au/dates.html">Principal dates</a></li>
+<li class="SectionNavLevel2"><a href="https://www.handbook.uts.edu.au/dates_academic.html">Academic year dates</a></li>
+<li class="SectionNavLevel2 current"><a href="https://www.handbook.uts.edu.au/course_areas.html"><span>Course areas</span></a>
+<ul id="sectionGroup15088">
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/ads/index.html">Analytics and Data Science</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/bus/index.html">Business</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/comm/index.html">Communication</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/cii/index.html">Creative Intelligence and Innovation</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/dab/index.html">Design, Architecture and Building</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/edu/index.html">Education</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/eng/index.html">Engineering</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/health/index.html">Health</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/health-gem/index.html">Graduate School of Health</a></li>
+<li class="SectionNavLevel3 current" id="currentpage"><a href="https://www.handbook.uts.edu.au/it/index.html"><span>Information Technology</span></a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/intl/index.html">International Studies and Social Sciences</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/law/index.html">Law</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/sci/index.html">Science</a></li>
+<li class="SectionNavLevel3"><a href="https://www.handbook.uts.edu.au/tdi/index.html">Transdisciplinary Innovation</a></li>
+</ul>
+</li>
+<li class="SectionNavLevel2"><a href="https://www.handbook.uts.edu.au/directory/index.html">Study package directory</a></li>
+<li class="SectionNavLevel2"><a href="https://www.handbook.uts.edu.au/archives.html">Archives</a></li>
+<li class="SectionNavLevel2"><a href="https://www.uts.edu.au/future-students">Applying and enrolling <img src="https://web.uts.edu.au/images/css/link_icons.png" class="ExternalLinkIcon" alt="opens a UTSWeb sub-site" width="9" height="9" /></a></li>
+<li class="SectionNavLevel2"><a href="http://www.gsu.uts.edu.au/rules/index.html">Rules of the University <img src="https://web.uts.edu.au/images/css/link_icons.png" class="ExternalLinkIcon" alt="opens a UTSWeb sub-site" width="9" height="9" /></a></li>
+</ul>
+</div>
+
+<div id="undernav-wrapper-triangle">
+<div id="sidebar-tabs-container"></div>
+<div id="sidebar-logos"></div>
+</div>
+                </div>
+            </div>
+
+            <div id="main-column"><!-- Main Column -->
+                <!-- Banner -->
+                
+
+                <!-- Start Content -->
+                <div id="main-content-nobanner">
+	                <div id="main-content"><!-- Main Content -->
+		                <!-- Skip to Contents Anchor -->
+		                <a name="start-content"></a>
+
+		                <div id="content"><!-- Content Columns -->
+		                    <div class="ie-images"> <!-- fixes problem where images don't display in ie6 -->
+		                        <h1>32998 .NET Application Development</h1>
+<em>6cp</em>; <em>3hpw; 1.5hpw (lecture), 1.5hpw (lab)</em> 
+	
+	<!-- remove all "-" --->
+	
+
+
+<br/><em>Requisite(s):  <a href="https://handbook.uts.edu.au/subjects/32555.html">32555</a> Fundamentals of Software Development  </em> 
+<br /><em>These requisites may not apply to students in certain courses. See <a href="https://studentforms.uts.edu.au/evop/access/search.cfm?subjectcode=32998">access conditions</a>.</em> 
+	
+	<!-- remove all "-" --->
+	
+
+
+<br/><em>Anti-requisite(s): <a href="https://handbook.uts.edu.au/subjects/31927.html">31927</a> Application Development with .NET </em> <br /><em>Recommended studies: a good understanding of programming constructs, O-O concepts and programming practices</em><br /><em><p>Postgraduate</p></em><h3>Description</h3>
+	
+<p><p>This subject introduces C#, Visual Studio and the .NET development environment. The emphasis is on examining the .NET framework and the practicalities of developing software in this setting using the C# language.</p></p>
+	<h3>Typical availability</h3>
+	
+<p><p>Spring session, City campus </p></p>
+	<br /><a href="./details/32998.html">Detailed subject description.</a><br />
+<div class="fees">
+
+<h3><a href="/general/fees.html">Fee information</a></h3>
+<p>Information to assist with determining the applicable fee type can be found at <a href="http://www.uts.edu.au/current-students/managing-your-course/fees-and-payment/understanding-fees">Understanding fees</a>.</p>
+<ul>
+	<li><strong>Commonwealth-supported students</strong>: view subject fees at <a href="http://cis.uts.edu.au/fees/index.cfm?liab_cd=CSP">Fees Search: Commonwealth-supported</a></li>
+	<li><strong>Postgraduate domestic fee-paying students</strong>: fees are charged according to the course enrolled in; refer to <a href="http://cis.uts.edu.au/fees/course-fees.cfm">Domestic Fees Search: Postgraduate and Research</a></li>
+	<li><strong>International students</strong>: fees are charged according to the course enrolled in; refer to <a href="http://www.uts.edu.au/current-students/managing-your-course/fees-and-payment/international-student-tuition-fees">International Fees Search</a></li>
+	<li><strong>Subject EFTSL</strong>: 0.125</li>
+</ul>
+
+</div>
+<div class="fees"><h4><a href="https://studentforms.uts.edu.au/evop/access/search.cfm?subjectcode=32998">Access conditions</a></h4>
+<strong>Note:</strong> The requisite information presented in this subject description covers only academic requisites. Full details of all enforced rules, covering both academic and admission requisites, are available at <a href="https://studentforms.uts.edu.au/evop/access/search.cfm?subjectcode=32998">access conditions</a> and My Student Admin.
+</div>
+
+
+
+
+
+
+		                    </div>
+		                    <div class="clear">
+                                <!--<img src="https://www.uts.edu.au/images/dot_clear.gif" width="15" height="2" alt="" />-->
+		                    </div>
+		                </div><!-- Content Columns -->
+		            </div><!-- Main Content -->
+	        	</div>
+	        	<!-- End Content -->
+        	</div><!-- Main Column -->
+        </div> <!-- Main Container -->
+
+        <!-- Footer -->
+        <div id="footer-wrapper">
+            <div id="website-footer">
+                
+
+<div id="footer-nav"><a class="footer-name" href="https://www.handbook.uts.edu.au/index.html">UTS: Handbook 2025</a></div>
+
+<div id="footer-subnav">
+<p><a href="https://www.handbook.uts.edu.au/index.html">UTS: Handbook</a> | 
+<a href="https://www.handbook.uts.edu.au/sitemap.html">Site map</a> </p>
+</div>
+            </div>
+            <div id="global-footer">
+                <div id="footer-img">
+<a href="https://www.uts.edu.au/">
+<img src="https://www.handbook.uts.edu.au/images/uts-logo-black.svg" width="70px" height="30px" alt="University of Technology Sydney homepage"/></a>
+<br /><a href="https://www.atn.edu.au">UTS is a member of the<br />Australian Technology Network of Universities</a>
+</div>
+
+<div id="footer-text">
+<div class="primary-links">
+<a href="https://www.uts.edu.au/about">About UTS</a> |
+<a href="https://www.uts.edu.au/uts-library-1">Library</a> |
+<a href="https://www.uts.edu.au/uts-newsroom">Newsroom</a> |
+<a href="https://www.uts.edu.au/staff">Staff</a> |
+<a href="https://www.uts.edu.au/about/contacts/uts-contacts">Contact us</a>
+</div>
+&copy; Copyright UTS - CRICOS Provider No: 00099F - TEQSA Provider ID: PRV12060 - TEQSA Category: Australian University - ABN: 77 257 686 961 - <span id="Date">1 September 2024 12:31 PM</span><br />
+The page is authorised by Director, Institute for Interactive Media and Learning<br /> 
+Send comments to <a href="mailto:uapo@uts.edu.au">UAPO</a><br />
+<a href="https://www.uts.edu.au/disclaimer.html">Disclaimer</a> |
+<a href="https://www.uts.edu.au/privacy.html">Privacy</a> |
+<a href="https://www.uts.edu.au/copyright.html">Copyright</a> |
+<a href="https://www.uts.edu.au/accessibility.html">Accessibility</a> |
+<a href="https://www.gsu.uts.edu.au/policies/webpolicy.html">Web policy</a> |
+<a href="https://www.uts.edu.au/">UTS homepage</a>
+</div>
+            </div>
+        </div>
+    </div> <!-- Full container, includes footer -->
+
+    
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11130300-1"); 
+pageTracker._trackPageview();
+
+var utsMasterTracker = _gat._getTracker("UA-10919634-1");
+utsMasterTracker._trackPageview("https://www.handbook.uts.edu.au");
+utsMasterTracker._setDomainName(".uts.edu.au");
+} catch(err) {}
+</script>
+    <script src="https://www.handbook.uts.edu.au/js/override.js" type="text/javascript"></script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPCSCCF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

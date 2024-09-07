@@ -1,4 +1,5 @@
 import Graph from "graphology";
+import force from "graphology-layout-force";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 import circular from "graphology-layout/circular";
 import Sigma from "sigma"
@@ -98,9 +99,10 @@ const renderGraph = async () => {
         }
     }
 
-    circular.assign(graph);
-    const settings = forceAtlas2.inferSettings(graph);
-    forceAtlas2.assign(graph, { settings, iterations: 1000 });
+    // circular.assign(graph);
+    // const settings = forceAtlas2.inferSettings(graph);
+    // forceAtlas2.assign(graph, { settings, iterations: 1000 });
+    force.assign(graph, 10);
     
     const graphRenderer = new Sigma(graph, document.getElementById("container")!, { labelSize: 12 });
 };

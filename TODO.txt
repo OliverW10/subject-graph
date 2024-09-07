@@ -1,0 +1,20 @@
+
+Use cases to try serve:
+- What do i have to do to get to this elective
+- What does this elective unlock for me
+Others which are too large for now:
+- What other subjects are there that are similar to X
+- Do these choices meet my degree requirements
+
+Some prerequsites are not simple 'A and B and C', they can be things like A and (B or C) which I will attempt to parse
+Some prereqs can also contain other things such as '94 Credit points in MAJ1234' which will be ignored
+Some of the prereqs are also not links to that subjects page in the handbook so cant rely on <a>'s to find them
+
+will simplify prereqs into a list of required (and'd together) and options (or'd together) and will then render options with a dashed/lighter edge in the graph
+
+can also get a more machine readable form from https://studentforms.uts.edu.au/evop/access/search.cfm?subjectcode=32998
+
+how to layout graph?
+
+degree viewer to preselect subjects and show possible electives
+- to handle properly would have to use handbook archive to get the degree from the year of enrollment
