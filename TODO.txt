@@ -17,4 +17,4 @@ can also get a more machine readable form from https://studentforms.uts.edu.au/e
 how to layout graph?
 
 degree viewer to preselect subjects and show possible electives
-- to handle properly would have to use handbook archive to get the degree from the year of enrollment
+- to handle properly would have to use handbook archive to get the degree from the year of enrollment   

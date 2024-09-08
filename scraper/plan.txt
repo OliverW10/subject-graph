@@ -1,0 +1,4 @@
+
+grab all subjects from alphabetical list
+for each subject
+    get subject prereqs 
