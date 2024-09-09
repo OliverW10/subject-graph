@@ -99,10 +99,10 @@ const renderGraph = async () => {
         }
     }
 
-    // circular.assign(graph);
-    // const settings = forceAtlas2.inferSettings(graph);
-    // forceAtlas2.assign(graph, { settings, iterations: 1000 });
-    force.assign(graph, 10);
+    circular.assign(graph);
+    const settings = forceAtlas2.inferSettings(graph);
+    forceAtlas2.assign(graph, { settings, iterations: 1000 });
+    // force.assign(graph, 10);
     
     const graphRenderer = new Sigma(graph, document.getElementById("container")!, { labelSize: 12 });
 };

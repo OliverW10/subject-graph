@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "(parcel build ./index.html) && (copy subjects.json dist) && (parcel ./index.html)"
+    "dev": "(mkdir -p dist) && (cp subjects.json dist) && (parcel ./index.html)"
   },
   "dependencies": {
     "graphology": "^0.25.4",
